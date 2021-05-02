@@ -1,0 +1,12 @@
+.main-header{
+    width: 100%;
+    text-align: center;
+}
+.main-header::after{
+    content: "";
+    width: 90%;
+    height: 1px;
+    background: rgb(227,227,227);
+    background: radial-gradient(circle, rgba(227,227,227,1) 0%, rgba(227,227,227,1) 66%, rgba(255,255,255,1) 100%);    display: block;
+    margin:auto;
+}

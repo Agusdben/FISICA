@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Graficando ando</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="node_modules\normalize.css\normalize.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <main class="root">
+        <header class="main-header">
+            <h2 class="main-header__title">Grafica MRU/MRUV</h2>
+        </header>
+
+        <h4 class="parametros__title">Ingrese los valores</h4>
+        <div class="parametros">
+            <div class="parametros__grid">
+                <div class="parametros__grupo">
+                    <input type="number"      id="x0"       class="parametros__input" placeholder="m">
+                    <label for="x0">Posicion inicial</label>
+                </div>
+    
+                <div class="parametros__grupo">
+                    <input type="number"      id="x1"       class="parametros__input" placeholder="m">
+                    <label for="x1">Posicion final</label>
+                </div>
+    
+                <div class="parametros__grupo">
+                    <input type="number"      id="v0"       class="parametros__input" placeholder="m/s">
+                    <label for="v0">Velocidad inicial</label>
+                </div>
+    
+                <div class="parametros__grupo">
+                    <input type="number"      id="v1"       class="parametros__input" placeholder="m/s">
+                    <label for="v1">velocidad final</label>
+                </div>
+    
+                <div class="parametros__grupo">
+                    <input type="number"      id="t0"       class="parametros__input" placeholder="s">
+                    <label for="t0">Tiempo inicial</label>
+                </div>
+    
+                <div class="parametros__grupo">
+                    <input type="number"      id="t1"       class="parametros__input" placeholder="s">
+                    <label for="t1">Tiempo final</label>
+                </div>
+    
+                <div class="parametros__grupo">
+                    <input type="number"      id="a"        class="parametros__input" placeholder="m/s2">
+                    <label for="a">Aceleracion</label>
+                </div>
+            </div>
+
+            <h4 class="parametros__title">Graficar</h4>
+            <div class="parametros__botones">
+                <input type="button"                    class="parametros__button vt button" value="Velocidad/Tiempo">
+                <input type="button"                    class="parametros__button pt button" value="Posicion/Tiempo">
+            </div>
+        </div>
+
+        <div class="resultado">
+        </div>
+    </main>
+    <script src="scripts/script.js"></script>
+
+
+</body>
+</html>

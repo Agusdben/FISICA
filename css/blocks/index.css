@@ -1,0 +1,12 @@
+input:focus{
+    outline: none;
+}
+
+:is(h1, h3, h4, h5, h6)[class *= "__title"] {
+    text-align: center;
+    text-decoration: underline;
+}
+
+label{
+    text-align: center;
+}
